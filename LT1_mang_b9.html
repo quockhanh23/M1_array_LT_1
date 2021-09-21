@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Nối 2 mảng</h3>
+<button id="anvao" onclick="noi2mang()">Nối</button>
+<h2 id="res"></h2>
+</body>
+</html>
+<script>
+    let arr1 = [1, 2, 5, 6, 4, 3, 5, 44, 11, 54]
+    let arr2 = [12, 0, 7, 43, 27, 89, 21, 65, 9, 10]
+    let arr3 = arr1.concat(arr2)
+
+    function noi2mang() {
+        document.getElementById('res').innerHTML = arr3
+    }
+</script>

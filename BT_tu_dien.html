@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input id="input" type="text" placeholder="Translate" size="30px"></label>
+
+<button onclick="lam()">dịch</button>
+<h2 id="res"></h2>
+</body>
+</html>
+<script>
+    let eng = ['chicken', 'black', 'dog', 'say', 'do', 'turkey']
+    let vie = ['gà', 'đen', 'chó','nói','làm', 'gà tây']
+    function lam() {
+    let a = document.getElementById('input').value;
+    let check = false
+        for (let i = 0; i < eng.length; i++) {
+            if (a === eng[i] ) {
+                document.getElementById('res').innerHTML = vie[i]
+                check = true
+                break
+            }
+        } if (check === false)
+        document.getElementById('res').innerHTML = "không tìm thấy dữ liệu"
+
+
+    }
+</script>

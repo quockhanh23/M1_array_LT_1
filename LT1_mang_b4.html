@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>đảo ngược mảng</h3>
+</body>
+</html>
+<script>
+    let numbers = [1,24,63,32,12]
+    let first = 0
+    let last = numbers.length - 1;
+    while (first < last) {
+        let b = numbers[first]
+        numbers[first] = numbers[last]
+        numbers[last] = b
+        first++
+        last--
+    } document.write(numbers)
+
+
+    // numbers.reverse()                // dùng hàm reverse()
+    // document.write(numbers)
+</script>

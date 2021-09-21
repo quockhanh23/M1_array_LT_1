@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tìm số lớn nhất trong mảng, giá trị trung bình của các phần tử</h3>
+</body>
+</html>
+<script>
+    let numbers = [12,22,11,4,11];
+    let max = numbers[0]
+    let count = 0
+    let sum = 0
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i]
+        }
+        sum = sum + numbers[i]
+        count++
+    }document.write(max + '<br>')
+    let tb = sum/count
+    document.write(tb);
+</script>

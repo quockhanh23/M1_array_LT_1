@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Xóa 1 phần tử và gán vào vị trí cuối cùng giá trị = 0 </h3>
+</body>
+</html>
+<script>
+let arr = [3,1,5,7,53,23,55,22,11,276,9]
+let num = +prompt('nhap')
+    for (let i = 0; i< arr.length; i++) {
+        if (num ===arr[i]) {
+            arr.splice(i,1)
+            arr.push(0)
+            // arr[i] = arr[i+1];
+            // arr[arr.length-1] = 0
+        }
+    }document.write(arr)
+
+</script>
