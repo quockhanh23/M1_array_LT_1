@@ -9,7 +9,12 @@
 </body>
 </html>
 <script>
-    let arr = [3,2,1,4,6,7,9,11,99,15]
+    let arr = []
+    while (arr.length < 10) {
+        let input = prompt('nhập')
+        arr.push(input)
+    }
+    // let arr = [3,2,1,4,6,7,9,11,99,15]
     arr.sort(function(a, b){return a - b})      // sắp xếp theo số
     document.write(arr + '<br>')
     arr.sort(function(a, b){return b - a})

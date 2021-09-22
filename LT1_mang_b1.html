@@ -9,7 +9,13 @@
 </body>
 </html>
 <script>
-    let numbers = [21,22,11,2,3,5,7,5,33,23];
+    let numbers = []
+    while (numbers.length < 7) {
+        let input = prompt('nhập')
+        numbers.push(input)
+        console.log(numbers)
+    }
+    // let numbers = [21,22,11,2,3,5,7,5,33,23];
         for (let i = 0; i <numbers.length; i++) {
             if (numbers[i] >= 10) {
                 document.write(numbers[i] + "<br>")
